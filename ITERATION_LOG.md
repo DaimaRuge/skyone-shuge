@@ -141,15 +141,23 @@ skyone-shuge/
 - [x] 扩展 `core/config.py` 配置项，引入任务队列和数据分析等相关配置
 - [x] 更新 PRD (MVP_v3.0.6.md) 与架构文档 (ARCHITECTURE_v3.0.6.md)
 
-### v3.0.6 完成总结 (2026-03-16)
-- [x] API 层完整实现：10 个路由模块全部就位
-- [x] 新增路由：`rag`, `tasks`, `analytics`, `models`, `advanced_search`, `batch`
-- [x] 扩展 Schemas：`rag.py`, `tasks.py`, `analytics.py`, `ml.py`
-- [x] 配置增强：`core/config.py` 扩展任务队列、分析统计配置
-- [x] 更新 PRD 和架构文档至 v3.0.6
+### v3.0.7 (2026-03-18) - 今日迭代完成
+- [x] 引入 Celery + Redis 实现异步任务队列架构
+  - 创建 `core/celery_app.py` - Celery 应用配置
+  - 配置任务队列路由（documents/embeddings/index/notifications）
+  - 设置任务超时、重试、序列化等参数
+- [x] 创建异步任务模块 `tasks/`
+  - `document_tasks.py` - 文档上传/解析/切分/向量化/索引全流程任务
+  - `embedding_tasks.py` - 文本嵌入生成、批量处理、相似度计算
+  - `index_tasks.py` - 向量入库、索引更新、元数据同步
+  - `notification_tasks.py` - WebSocket 通知、邮件、任务进度推送
+  - `__init__.py` - 统一导出所有任务
+- [x] 更新配置 `core/config.py` - 添加 Celery 专属配置项
+- [x] 已有 PRD (MVP_v3.0.7.md) 和架构文档 (ARCHITECTURE_v3.0.7.md)
 
-### v3.0.7 下一步计划
-- [ ] 引入 Celery/RQ 和 Redis 实现真正的异步后台任务运行逻辑，对接 TaskRegistry
-- [ ] 整合文档上传、解析流程，对接 Agent 工作流进行文档端到端处理
-- [ ] 前后端联调，打通端到端的交互链路
+### v3.0.7 下一步计划 (v3.0.8)
+- [ ] 实现 WebSocket 连接管理器，对接通知任务
+- [ ] 创建 Agent RAG 工具类，将检索能力暴露给 Agent
+- [ ] 实现文档端到端处理的工作流编排
+- [ ] 添加 Celery Worker 启动脚本和 Docker 配置
 

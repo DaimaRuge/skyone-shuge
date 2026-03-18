@@ -59,8 +59,14 @@ class Settings(BaseSettings):
     
     # 异步任务队列配置
     TASK_QUEUE_ENABLED: bool = True
-    TASK_QUEUE_TYPE: str = "rq"  # rq, celery
+    TASK_QUEUE_TYPE: str = "celery"  # rq, celery
     REDIS_URL: str = "redis://localhost:6379/0"
+    
+    # Celery 配置
+    CELERY_BROKER_URL: str = "redis://localhost:6379/0"
+    CELERY_RESULT_BACKEND: str = "redis://localhost:6379/0"
+    CELERY_WORKER_CONCURRENCY: int = 4
+    CELERY_TASK_TIMEOUT: int = 3600  # 1小时
     
     # 机器学习模型配置
     ML_EMBEDDING_PROVIDER: str = "ark"  # openai, ark, sentence_transformers
