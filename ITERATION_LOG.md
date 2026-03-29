@@ -273,10 +273,38 @@ skyone-shuge/
 - [x] 更新 ITERATION_LOG.md 至 v3.0.11
 
 ### v3.0.11 下一步计划 (v3.0.12)
-- [ ] LibIndex One 同步服务
-- [ ] 项目级管理
-- [ ] 协作功能
-- [ ] 插件系统
+- [x] LibIndex One 同步服务
+- [x] 项目级管理
+- [x] 协作功能
+- [x] 插件系统
 
-**更新时间**: 2026-03-28 23:10
+### v3.0.12 (2026-03-29) - 今日迭代完成
+- [x] LibIndex One 同步服务设计
+  - 双向同步架构（全量/增量/元数据）
+  - 冲突检测与解决策略（本地/远程/时间戳/合并/人工）
+  - 同步状态机与任务队列
+- [x] 项目级管理设计
+  - 多租户架构与行级安全（RLS）
+  - RBAC 权限模型（Owner/Admin/Editor/Viewer）
+  - 项目模板引擎与文件夹结构
+- [x] 协作功能设计
+  - CRDT 协作架构（Yjs）
+  - 评论系统（Threading/Anchoring/Notification）
+  - 活动日志与审计
+- [x] 插件系统设计
+  - 插件架构（Lifecycle/Hook/Security）
+  - 沙箱机制（iframe 隔离）
+  - Hook 系统与 API 暴露
+- [x] 创建 PRD v3.0.12 (`prd/MVP_v3.0.12.md`)
+- [x] 创建架构文档 v3.0.12 (`architecture/ARCHITECTURE_v3.0.12.md`)
+- [x] 更新 ITERATION_LOG.md 至 v3.0.12
+
+### v3.0.12 下一步计划 (v3.0.13)
+- [ ] 移动端适配
+- [ ] AI 辅助写作
+- [ ] 知识图谱可视化
+- [ ] 高级权限管理
+- [ ] 数据备份与恢复
+
+**更新时间**: 2026-03-29 23:00
 
