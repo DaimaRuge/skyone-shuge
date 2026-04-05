@@ -394,5 +394,40 @@ skyone-shuge/
 - [x] 创建架构文档 v3.0.15 (`architecture/ARCHITECTURE_v3.0.15.md`)
 - [x] 更新 ITERATION_LOG.md 至 v3.0.15
 
-**更新时间**: 2026-04-04 23:00
+**更新时间**: 2026-04-05 23:00
+
+### v3.0.16 (2026-04-05) - 今日迭代完成
+- [x] 后端核心模块实现
+  - 监控 SDK 集成 (Prometheus Metrics Client)
+  - OpenTelemetry Tracing 集成
+  - 结构化日志封装 (JSON Logger)
+  - 限流中间件实现 (Token Bucket)
+  - 多级缓存封装 (L1 Memory / L2 Redis)
+  - ES 搜索封装客户端
+  - LLM 成本追踪服务
+- [x] 前端 UI 组件开发
+  - 监控仪表盘组件 (MetricsChart, TraceViewer)
+  - 限流配置面板组件
+  - 缓存管理界面组件
+  - 搜索控制台组件
+  - 成本展示面板组件
+- [x] 单元测试与集成测试框架
+  - pytest 配置与 fixtures
+  - 限流器单元测试
+  - LLM 成本计算测试
+  - 多级缓存测试
+  - API 集成测试
+  - 数据库集成测试
+- [x] 创建 PRD v3.0.16 (`prd/MVP_v3.0.16.md`)
+- [x] 创建架构文档 v3.0.16 (`architecture/ARCHITECTURE_v3.0.16.md`)
+- [x] 更新 ITERATION_LOG.md 至 v3.0.16
+
+### v3.0.16 下一步计划 (v3.0.17)
+- [ ] 监控后端 API 端点实现
+- [ ] 限流后端 API 端点实现
+- [ ] 缓存管理后端 API 实现
+- [ ] 前端与后端联调
+- [ ] 端到端测试完善
+
+**更新时间**: 2026-04-05 23:00
 
