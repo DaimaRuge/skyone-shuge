@@ -509,10 +509,33 @@ skyone-shuge/
 - [x] 更新 ITERATION_LOG.md 至 v3.0.19
 - [x] 更新 ITERATION_PLAN.md 至 v3.0.19
 
-### v3.0.19 下一步计划 (v3.0.20)
+### v3.0.20 (2026-04-12) - 今日迭代完成 ✅
+- [x] 多模态 RAG 架构
+  - 图像理解 (Caption 生成/OCR 提取/布局分析)
+  - 表格理解 (结构识别/JSON 转换/摘要生成)
+  - 图表处理 (数据提取/趋势分析)
+  - 跨模态检索 (文本↔图像双向检索)
+- [x] 企业级集成架构
+  - SSO/LDAP 身份认证 (SAML 2.0/OIDC/LDAP)
+  - Notion 双向同步 (增量同步/冲突解决/Webhook)
+  - Microsoft Teams 集成 (Bot 消息/搜索卡片/通知推送)
+- [x] AI 模型微调与服务化
+  - 领域自适应微调 (LoRA/QLoRA/DPO)
+  - 模型服务化 (vLLM/模型路由/AB 测试)
+  - 模型注册中心 (版本管理/质量路由/成本追踪)
+- [x] 高级检索增强
+  - 混合检索 (Dense + Sparse + Keyword 融合)
+  - Cross-Encoder 重排序
+  - 查询扩展 (HyDE/同义词/查询改写)
+- [x] 创建 PRD v3.0.20 (`prd/MVP_v3.0.20.md`)
+- [x] 创建架构文档 v3.0.20 (`architecture/ARCHITECTURE_v3.0.20.md`)
+- [x] 更新 ITERATION_LOG.md 至 v3.0.20
+- [x] 更新 ITERATION_PLAN.md 至 v3.0.20
+
+### v3.0.20 下一步计划 (v3.0.21)
 - [ ] 代码实现
 - [ ] 测试验证
 - [ ] 部署上线
 
-**更新时间**: 2026-04-10 23:00
+**更新时间**: 2026-04-12 23:00
 
